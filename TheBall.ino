@@ -1,9 +1,6 @@
 #include <IRremote.h>
 #include <Adafruit_NeoPixel.h>
 
-// Zum Testen.
-#define LED             13
-
 // Konfiguration des LED Rings.
 #define LED_CONTROL     11
 #define LED_COUNT       7
@@ -30,13 +27,6 @@ void setup() {
 
     // Fernbedienung initialisieren.
     irrecv.enableIRIn();
-
-    // Anzeige initialisieren.
-    pinMode(LED, OUTPUT);
-
-    // Zum Testen.
-    Serial.begin(9600);
-    Serial.println("A");
 }
 
 void loop() {
@@ -46,13 +36,11 @@ void loop() {
     // Keine Änderung.
     if (irrecv.decode(&results))
     {
-        Serial.println("B");
-
         // Fernbedienung auswerten.
         switch (results.value)
         {
         default:
-            mode = 0;
+            mode = (mode == 2) ? 3 : 2;
             break;
         }
 
