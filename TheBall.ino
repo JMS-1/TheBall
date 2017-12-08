@@ -2,11 +2,11 @@
 #include <Adafruit_NeoPixel.h>
 
 // Konfiguration des LED Rings.
-#define LED_CONTROL     11
+#define LED_CONTROL     4
 #define LED_COUNT       7
 
 // Konfiguration der Fernbedienung.
-#define REMOTE_PIN      12
+#define REMOTE_PIN      2
 
 IRrecv irrecv(REMOTE_PIN);
 
@@ -116,7 +116,7 @@ int sequence[] = { 1, 4, 2, 5, 3, 6 };
 
 void glitter() {
     for (auto led = 0; led < LED_COUNT; led++) {
-        leds.setPixelColor(led, Adafruit_NeoPixel::Color(50 + random(100), 50 + random(100), 50 + random(100), 0));
+        leds.setPixelColor(led, Adafruit_NeoPixel::Color(30 + random(50), 30 + random(50), 30 + random(50), 0));
         leds.show();
     }
 
