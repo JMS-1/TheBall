@@ -36,16 +36,28 @@ void loop() {
     // Keine Änderung.
     if (irrecv.decode(&results))
     {
+        // Weiter machen.
+        irrecv.resume();
+
         // Fernbedienung auswerten.
         switch (results.value)
         {
-        default:
-            mode = (mode == 2) ? 3 : 2;
+        case 0xFF4AB5:
+            mode = 0;
+            break;
+        case 0xFF6897:
+            mode = 1;
+            break;
+        case 0xFF9867:
+            mode = 2;
+            break;
+        case 0xFFB04F:
+            mode = 3;
+            break;
+        case 0xFF30CF:
+            mode = 4;
             break;
         }
-
-        // Weiter machen.
-        irrecv.resume();
     }
 
     // Anzeige.
@@ -71,6 +83,8 @@ void loop() {
 void black() {
     leds.clear();
     leds.show();
+
+    delay(100);
 }
 
 void white() {
@@ -79,6 +93,8 @@ void white() {
     }
 
     leds.show();
+
+    delay(100);
 }
 
 void rotate() {
