@@ -17,7 +17,7 @@ uint32_t COLOR_WHITE = Adafruit_NeoPixel::Color(255, 255, 255, 255);
 uint32_t COLOR_RED = Adafruit_NeoPixel::Color(255, 0, 0, 0);
 uint32_t COLOR_BLACK = Adafruit_NeoPixel::Color(0, 0, 0, 0);
 
-int mode = 0;
+int mode = 3;
 
 void setup() {
     randomSeed(analogRead(0));

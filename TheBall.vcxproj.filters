@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Bilder">
+      <UniqueIdentifier>{f5190759-d02b-4f04-a686-5a22661b66d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="TheBall.ino" />
@@ -21,5 +24,10 @@
     <ClInclude Include="__vm\.TheBall.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Bilder\001 Rohbau.jpg">
+      <Filter>Bilder</Filter>
+    </Image>
   </ItemGroup>
 </Project>

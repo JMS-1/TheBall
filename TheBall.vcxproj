@@ -84,6 +84,9 @@
   <ItemGroup>
     <ClInclude Include="__vm\.TheBall.vsarduino.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Bilder\001 Rohbau.jpg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
