@@ -15,11 +15,14 @@
     </Filter>
     <Filter Include="Bilder">
       <UniqueIdentifier>{f5190759-d02b-4f04-a686-5a22661b66d9}</UniqueIdentifier>
-      <Extensions>jpg</Extensions>
+      <Extensions>jpg;docx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="TheBall.ino" />
+    <None Include="Bilder\Beschreibung.docx">
+      <Filter>Bilder</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.TheBall.vsarduino.h">
