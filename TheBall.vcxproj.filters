@@ -15,6 +15,7 @@
     </Filter>
     <Filter Include="Bilder">
       <UniqueIdentifier>{f5190759-d02b-4f04-a686-5a22661b66d9}</UniqueIdentifier>
+      <Extensions>jpg</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,6 +28,12 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="Bilder\001 Rohbau.jpg">
+      <Filter>Bilder</Filter>
+    </Image>
+    <Image Include="Bilder\002 Vormontage (vorne).jpg">
+      <Filter>Bilder</Filter>
+    </Image>
+    <Image Include="Bilder\003 Vormontage (hinten).jpg">
       <Filter>Bilder</Filter>
     </Image>
   </ItemGroup>
