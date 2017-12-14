@@ -39,5 +39,8 @@
     <Image Include="Bilder\003 Vormontage (hinten).jpg">
       <Filter>Bilder</Filter>
     </Image>
+    <Image Include="Bilder\004 Fertig.jpg">
+      <Filter>Bilder</Filter>
+    </Image>
   </ItemGroup>
 </Project>

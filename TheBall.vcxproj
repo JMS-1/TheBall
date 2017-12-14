@@ -89,6 +89,7 @@
     <Image Include="Bilder\001 Rohbau.jpg" />
     <Image Include="Bilder\002 Vormontage (vorne).jpg" />
     <Image Include="Bilder\003 Vormontage (hinten).jpg" />
+    <Image Include="Bilder\004 Fertig.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
